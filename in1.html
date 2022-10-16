@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="in1.css">
+</head>
+<body>
+ <div class="demo">
+    <label for="num1">Num1</label>
+    <input type="number" name="num1" id="num1">
+    <br>
+    <br>
+    <label for="num2">Num2</label>
+    <input type="number" name="num2" id="num2">
+    <br>
+    <br>
+    <div>
+        <label for="answer">Answer:</label>
+        <div id="answer"></div>
+    </div>
+    <br>
+    <br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="subtract()">subtract</button>
+ </div>
+    <script>
+        function add(){
+            const number1 = document.getElementById('num1').value;
+            const number2 = document.getElementById('num2').value;
+
+            const result = parseFloat(number1)+parseFloat(number2);
+            document.getElementById('answer').innerHTML = result;
+        }
+
+        function multiply(){
+            const number1 = document.getElementById('num1').value;
+            const number2 = document.getElementById('num2').value;
+
+            const result = parseFloat(number1)*parseFloat(number2);
+            document.getElementById('answer').innerHTML = result;
+        }
+
+        function subtract(){
+            const number1 = document.getElementById('num1').value;
+            const number2 = document.getElementById('num2').value;
+
+            const result = parseFloat(number1)-parseFloat(number2);
+            document.getElementById('answer').innerHTML = result;
+        }
+    </script>
+    
+</body>
+</html>

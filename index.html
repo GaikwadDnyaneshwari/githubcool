@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+  <div class="input-section">
+    <input type="text" id="todoiteminput">
+    <button onclick="addItemToList()">Add task</button>
+  </div>
+  <div class="list-section">
+    <ol class="orderedlist" id="todolist">
+
+    </ol>
+  </div>
+  <script>
+    function addItemToList(){
+
+      const inputValue = document.getElementById("todoiteminput").value;
+      if(!inputValue.trim()){
+        alert("please add some item")
+      }else{
+        alert(inputValue);
+//a.
+const newListItem = document.createElement('li');
+const textNode = document.createTextNode(inputValue);
+newListItem.appendChild(textNode);
+console.log(newListItem, "list item")
+//b.
+const closeButton = document.createElement('span');
+const closeText = document.createTextNode('X');
+closeButton.appendChild(closeText);
+newListItem.appendChild(closeButton);
+//c.
+closeButton.addEventListener('click',function(){
+  console.log(this.parentElement,'what is the parent')
+})
+
+//d.
+const orderedList =document.getElementById('todolist');
+orderedList.appendChild(newListItem);
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+  

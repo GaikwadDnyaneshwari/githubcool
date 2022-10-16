@@ -1,0 +1,55 @@
+/* div{
+  border: 1px solid red;
+  width: 150px;
+  background-color: yellowgreen;
+  margin: 10px;
+  padding: 5px;
+  box-shadow:5px 10px 15px  burlywood;
+
+} */
+/* input{
+  background-color: grey;
+  color: white;
+} */
+
+#nav{
+  background-color: aquamarine;
+  margin: 20px;
+}
+.navbar > a{
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 1%;
+  padding: 2px;
+  background-color: gold;
+  letter-spacing: 1px;
+  color: black;
+  
+}
+#main{
+  margin: 10px;
+  
+}
+.image_container{
+  margin: 10px;
+  position: relative;
+}
+
+.price_container{
+  width: 60%;
+  margin: 10px;
+}
+
+
+ 
+
+ .price_container>.price1_container{
+    position: relative;
+    left: 60%;
+    /* right: 50%; */
+    bottom: 65vh;
+    background-color: gold;
+    margin: 20px;
+    height: 200px;
+    
+ }

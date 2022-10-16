@@ -1,0 +1,10 @@
+body{
+    font-family: arial;
+}
+    
+
+#box{
+    background: pink;
+    padding: 10px;
+    border: 1px solid #000;
+}
